@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+    <link rel="stylesheet" href="../lib/leaflet/leaflet.css" />
+    <script src="../lib/leaflet/leaflet-src.js"></script>
+    <style>
+        #mapid { height: 500px; background-color: red}
+    </style>
+</head
+<body>
+    <div>Hen bude mapa</div>
+    <div id="mapid"></div>
+    <div id="elmmapid"></div>
+    <script src="./main.js"></script>
+    <script>
+
+    // get an empty <div>
+    var div = document.getElementById('elmmapid');
+
+    // embed our Elm program in that <div>
+    Elm.embed(Elm.Main, div);
+    </script>
+</body>
+</html>
